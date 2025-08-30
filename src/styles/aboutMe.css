@@ -1,0 +1,54 @@
+#about {
+    display: flex;
+    height: 100%;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.about-card {
+    width: 436px;
+    height: 100%;
+    background-color: var(--color-cinza);
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.about-content {
+    width: 55%;
+    background-color: transparent;
+
+    h2 {
+        font-size: 4rem;
+        background-color: transparent;
+    }
+
+    p {
+        background-color: transparent;
+    }
+
+    .color-verde {
+        color: var(--color-verde);
+        background-color: transparent;
+    }
+}
+
+.about-experience {
+    width: 75%;
+    text-align: center;
+    background-color: transparent;
+
+    h2 {
+        padding-top: 30px;
+        font-size: 4rem;
+        color: var(--color-verde);
+        background-color: transparent;
+    }
+}
+
+.images-experience {
+    background-color: transparent;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}

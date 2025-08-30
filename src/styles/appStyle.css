@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #050C04;
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+ul, ol, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.principal {
+    color: var(--color-texto);
+    padding: 20px 100px;
+    min-height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
