@@ -1,6 +1,7 @@
 import AboutMe from "./scripts/AboutMe";
 import Header from "./scripts/Header";
 import Hero from "./scripts/Hero";
+import MyProjects from "./scripts/MyProjects";
 import { useTheme } from "./scripts/ThemeContext";
 import "./styles/appStyle.css";
 
@@ -18,6 +19,7 @@ export default function App() {
       <main>
         <Hero />
         <AboutMe />
+        <MyProjects />
       </main>
 
     </div>

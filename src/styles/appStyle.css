@@ -10,6 +10,11 @@ html, body {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: 4rem;
+    background-color: transparent;
+}
+
 ul, ol, li {
     text-decoration: none;
     list-style: none;

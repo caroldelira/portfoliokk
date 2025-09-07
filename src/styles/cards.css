@@ -1,0 +1,123 @@
+.conteinerCard {
+    margin-top: 50px;
+    width: 385px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 18px;
+    font-style: italic; 
+    font-weight: 200;
+    text-align: center;
+    height: 80px;
+    padding: 12px;;
+}
+
+.conteudoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: var(--color-cinza);
+    width: 100%;
+    border-radius: 10px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.conteudoCard a {
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--color-texto);
+    margin-top: 30px;
+    position: relative;
+}
+
+.conteudoCard img {
+    background-color: transparent;
+    width: 372px;
+    height: 230px;
+}
+
+/* Criamos quatro "linhas" animadas */
+.conteudoCard::before,
+.conteudoCard::after,
+.conteudoCard .top,
+.conteudoCard .bottom {
+    content: '';
+    position: absolute;
+    background-color: var(--color-verde); /* A cor da sua borda */
+    transition: all 0.4s ease-in-out;
+}
+
+/* Linha Superior (::before) */
+.conteudoCard::before {
+    top: 0;
+    left: 50%; /* Começa no centro superior */
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+}
+
+/* Linha Inferior (::after) */
+.conteudoCard::after {
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+}
+
+/* Linha Esquerda (terceiro elemento) */
+.conteudoCard .top {
+    top: 50%;
+    left: 0;
+    height: 0;
+    width: 2px;
+    transform: translateY(-50%);
+}
+
+/* Linha Direita (quarto elemento) */
+.conteudoCard .bottom {
+    top: 50%;
+    right: 0;
+    height: 0;
+    width: 2px;
+    transform: translateY(-50%);
+}
+
+/* Efeito de HOVER */
+.conteudoCard:hover::before,
+.conteudoCard:hover::after {
+    width: 100%; /* Expande horizontalmente */
+}
+
+.conteudoCard:hover .top,
+.conteudoCard:hover .bottom {
+    height: 100%; /* Expande verticalmente */
+}
+
+/* Para animar uma após a outra, você precisaria de @keyframes.
+   A forma mais simples e direta de fazer isso é: */
+.conteudoCard:hover::before {
+    width: 100%;
+    transition: width 0.4s ease-in-out;
+}
+.conteudoCard:hover::after {
+    width: 100%;
+    transition: width 0.4s ease-in-out 0.4s; /* Começa após a linha de cima */
+}
+.conteudoCard:hover .top {
+    height: 100%;
+    transition: height 0.4s ease-in-out 0.8s; /* Começa depois */
+}
+.conteudoCard:hover .bottom {
+    height: 100%;
+    transition: height 0.4s ease-in-out 1.2s; /* Por último */
+}

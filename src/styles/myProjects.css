@@ -1,0 +1,33 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100%;
+    margin: 100px 0;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.gridCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+@media (max-width: 768px) { 
+    .gridCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 425px) { 
+    .gridCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

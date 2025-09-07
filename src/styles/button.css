@@ -1,0 +1,21 @@
+.btn {
+    color: var(--color-texto);
+    background-color: var(--color-cinza);
+    font-size: 1.2rem;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+}
+
+.btn.active {
+    color: var(--color-bg);
+    background-color: var(--color-verdePrincipal);
+}
+
+.btn:hover {
+    color: var(--color-bg);
+    background-color: var(--color-verdePrincipal);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}

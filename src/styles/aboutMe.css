@@ -17,11 +17,6 @@
     width: 55%;
     background-color: transparent;
 
-    h2 {
-        font-size: 4rem;
-        background-color: transparent;
-    }
-
     p {
         background-color: transparent;
     }
@@ -39,9 +34,7 @@
 
     h2 {
         padding-top: 30px;
-        font-size: 4rem;
         color: var(--color-verde);
-        background-color: transparent;
     }
 }
 
