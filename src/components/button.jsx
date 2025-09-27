@@ -2,7 +2,7 @@ import { useTheme } from "../scripts/ThemeContext";
 
 import "../styles/button.css";
 
-export default function Button({nome, btnClasses}) {
+export default function Button({nome, btnClasses, onClick}) {
     const { theme } = useTheme();
 
     const appStyle = {
@@ -16,7 +16,7 @@ export default function Button({nome, btnClasses}) {
 
     return (
 
-        <button id="btn" className={btnButtonClasses} style={appStyle}>{nome}</button>
+        <button className={btnButtonClasses} style={appStyle} onClick={onClick}>{nome}</button>
 
     )
 }

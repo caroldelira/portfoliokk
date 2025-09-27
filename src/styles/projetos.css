@@ -1,4 +1,4 @@
-#projects {
+#projetos {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -8,7 +8,7 @@
 
 .filter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
     margin: 32px 0;
 }

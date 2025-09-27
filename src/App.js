@@ -1,7 +1,9 @@
-import AboutMe from "./scripts/AboutMe";
+import SobreMim from "./scripts/SobreMim";
 import Header from "./scripts/Header";
 import Hero from "./scripts/Hero";
-import MyProjects from "./scripts/MyProjects";
+import Projetos from "./scripts/Projetos";
+import Footer from "./scripts/Footer";
+
 import { useTheme } from "./scripts/ThemeContext";
 import "./styles/appStyle.css";
 
@@ -18,10 +20,10 @@ export default function App() {
       <Header />
       <main>
         <Hero />
-        <AboutMe />
-        <MyProjects />
+        <SobreMim />
+        <Projetos />
       </main>
-
+      <Footer />
     </div>
   );
 };

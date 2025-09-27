@@ -1,4 +1,4 @@
-import "../styles/aboutMe.css";
+import "../styles/sobreMim.css";
 import logoPhotoshop from "../images/Photoshop.png";
 import logoIlustrator from "../images/Ilustrator.png";
 import logoAfterEffects from "../images/AfterEfectts.png";
@@ -6,7 +6,7 @@ import logoCorel from "../images/Corel.png";
 
 import { useTheme } from "./ThemeContext";
 
-export default function AboutMe() {
+export default function SobreMim() {
     const { theme } = useTheme();
 
     const appStyle = {
@@ -14,7 +14,7 @@ export default function AboutMe() {
         "--color-cinza": theme.colors.cinza
     }
     return (
-        <section id="about" style={appStyle}>
+        <section id="sobreMim" style={appStyle}>
             <div className="about-content">
                 <div className="about-card">
                     <h2>
@@ -35,12 +35,12 @@ export default function AboutMe() {
                 <h2>
                     Habilidades
                 </h2>
-                <div className="images-experience">
+                <ul className="images-experience">
                     <li><img src={logoPhotoshop} alt="Logo do Photoshop" /></li>
                     <li><img src={logoIlustrator} alt="Logo do Illustrator" /></li>
                     <li><img src={logoAfterEffects} alt="Logo do After Effects" /></li>
                     <li><img src={logoCorel} alt="Logo do Corel Drawn" /></li>
-                </div>
+                </ul>
             </div>
         </section>
     );

@@ -64,6 +64,14 @@ header {
     background-color: transparent;
 }
 
+.hero-actions a {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-actions a:hover {
+    transform: scale(1.1);
+}
+
 #link-contato {
     width: 140px;
     height: 48px;

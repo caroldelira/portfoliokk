@@ -1,6 +1,6 @@
 import imageDesigner from "../images/EuPort1.png";
 import logoLinkedin from "../images/logo-linkedin.png";
-import arrowDown from "../icons/arrow-down.svg"
+import arrowDown from "../icons/arrow-down.svg";
 import videoBG from "../videos/bg-desk.mp4";
 
 import "../styles/hero.css";
@@ -33,10 +33,10 @@ export default function Hero() {
                     </h2>
                 </header>
                 <div className="hero-actions">
-                    <a id="link-contato" href="#" target="_blank">
+                    <a id="link-contato" href="https://wa.me/+55081987425061/?text=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank">
                         Contato
                     </a>
-                    <a id="link-linkedin" href="#" target="_blank">
+                    <a id="link-linkedin" href="https://www.linkedin.com/in/ctavaresdsgn" target="_blank">
                         <img src={logoLinkedin} alt="Acesso ao linkedIn" />
                     </a>
                 </div>
