@@ -33,10 +33,10 @@ export default function Hero() {
                     </h2>
                 </header>
                 <div className="hero-actions">
-                    <a id="link-contato" href="https://wa.me/+55081987425061/?text=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank">
+                    <a id="link-contato" href="https://wa.me/+55081987425061/?text=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" rel="noreferrer">
                         Contato
                     </a>
-                    <a id="link-linkedin" href="https://www.linkedin.com/in/ctavaresdsgn" target="_blank">
+                    <a id="link-linkedin" href="https://www.linkedin.com/in/ctavaresdsgn" target="_blank" rel="noreferrer">
                         <img src={logoLinkedin} alt="Acesso ao linkedIn" />
                     </a>
                 </div>

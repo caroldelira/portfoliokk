@@ -26,9 +26,9 @@ export default function Footer() {
             </nav>
             <div className="contatos">
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/ctavaresdsgn" target="_blank"><img src={linkedin} alt="acesso ao linkedin do designer Cacá Tavares" /></a></li>
-                    <li><a href="https://wa.me/+55081987425061/?text=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"><img src={whatsapp} alt="acesso ao whatsapp do designer Cacá Tavares" /></a></li>
-                    <li><a href="mailto:ctavares.visual@gmail.com?subject=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank"><img src={email} alt="acesso ao email do designer Cacá Tavares" /></a></li>
+                    <li><a href="https://www.linkedin.com/in/ctavaresdsgn" target="_blank" rel="noreferrer"><img src={linkedin} alt="acesso ao linkedin do designer Cacá Tavares" /></a></li>
+                    <li><a href="https://wa.me/+55081987425061/?text=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" rel="noreferrer"><img src={whatsapp} alt="acesso ao whatsapp do designer Cacá Tavares" /></a></li>
+                    <li><a href="mailto:ctavares.visual@gmail.com?subject=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" rel="noreferrer" title="ctavares.visual@gmail.com"><img src={email} alt="acesso ao email do designer Cacá Tavares" /></a></li>
                 </ul>
             </div>
             <div>
