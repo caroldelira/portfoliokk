@@ -1,7 +1,8 @@
-import imageDesigner from "../images/EuPort1.png";
+import imageDesigner from "../images/EuPort1.svg";
 import logoLinkedin from "../images/logo-linkedin.png";
 import arrowDown from "../icons/arrow-down.svg";
 import videoBG from "../videos/bg-desk.mp4";
+import videoBGMobile from "../videos/bg-mobile.mp4";
 
 import "../styles/hero.css";
 import { useTheme } from "./ThemeContext";
@@ -16,10 +17,12 @@ export default function Hero() {
         "--color-bg": theme.colors.background
     }
 
+    const mobileScreen = window.screen.width <= 768;
+
     return (
         <section id="hero">
             <video className="video-bg" autoPlay loop muted playsInline>
-                <source src={videoBG} type="video/mp4" />
+                <source src={mobileScreen ? videoBGMobile : videoBG} type="video/mp4" />
                 Seu navegador não suporta vídeo dessa seção.
             </video>
 
@@ -32,6 +35,13 @@ export default function Hero() {
                         DESIGNER
                     </h2>
                 </header>
+                
+                {mobileScreen &&
+                    <div className="hero-image">
+                        <img src={imageDesigner} alt="Cacá Tavares, designer, pronta para um projeto"/>
+                    </div>
+                }
+
                 <div className="hero-actions">
                     <a id="link-contato" href="https://wa.me/+55081987425061/?text=Olá%20Cacá%20Tavares,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" rel="noreferrer">
                         Contato
@@ -42,13 +52,17 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className="hero-image">
-                <img src={imageDesigner} alt="Cacá Tavares, designer, pronta para um projeto"/>
-            </div>
-            
-            <div className="icon-down">
-                <img src={arrowDown} alt="icone com seta para baixo" />
-            </div>
+            {!mobileScreen &&
+                <div className="hero-image">
+                    <img src={imageDesigner} alt="Cacá Tavares, designer, pronta para um projeto"/>
+                </div>     
+            }
+
+            {!mobileScreen &&
+                <div className="icon-down">
+                    <img src={arrowDown} alt="icone com seta para baixo" />
+                </div>   
+            }
         </section>
     )
 }

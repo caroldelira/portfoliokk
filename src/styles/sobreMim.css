@@ -54,3 +54,44 @@
 .images-experience img:hover {
     transform: translateY(-20px);
 }
+
+
+@media screen and (max-width: 768px) {
+    #sobreMim {
+        flex-direction: column;
+        height: 100%;
+        gap: 30px;
+        margin: 50px 0;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content p {
+        text-align: justify;
+    }
+
+    .about-card {
+        width: 100%;
+        border-radius: 24px;
+        padding: 20px;
+    }
+
+    .about-card h2 {
+        padding-bottom: 20px;
+    }
+
+    .about-experience {
+        width: 100%;
+    }
+
+    .images-experience {
+        flex-direction: column;
+    }
+
+    .images-experience li img {
+        width: 65px;
+    }
+
+}

@@ -106,3 +106,48 @@ header {
     left: 51%;
     opacity: 0.55;
 }
+
+@media screen and (max-width: 768px) { 
+    #hero {
+        flex-direction: column;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    
+    .hero-image {
+        margin-top: -40px;
+    }
+
+    .hero-content {
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+
+        h1 {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+    }
+
+    .hero-actions {
+        margin-top: 0px;
+    }
+
+    #link-contato {
+        width: 120px;
+        height: 40px;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    #link-linkedin {
+        width: 125px;
+        height: 40px;
+        padding: 9px 20px;
+    }
+}

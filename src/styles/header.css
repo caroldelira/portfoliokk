@@ -25,3 +25,24 @@
     cursor: pointer;
     border-bottom: 1px solid #1EF600;
 }
+
+@media screen and (max-width: 768px) {
+    .headerMobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerMobile button {
+        border: none;
+    }
+
+    .headerMobile .logoMobile {
+        width: 60px;
+    }
+
+    .menuHeader ul {
+        gap: 24px;
+        font-size: 1rem;
+    }
+}

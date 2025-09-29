@@ -31,3 +31,13 @@ ul, ol, li {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) { 
+    .principal {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+

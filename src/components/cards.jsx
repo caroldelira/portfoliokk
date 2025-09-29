@@ -20,6 +20,7 @@ export default function Cards({titulo, caminho, link, categoria}) {
             <div className="conteudoCard">
                 <a href={link} target="_blank" rel="noreferrer">
                     <img src={caminho} alt={titulo} />
+                    {/* Ver mais */}
                 </a>
             </div>
         </div>
