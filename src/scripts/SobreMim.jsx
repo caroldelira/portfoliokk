@@ -13,8 +13,6 @@ export default function SobreMim() {
         "--color-verde": theme.colors.verdePrincipal,
         "--color-cinza": theme.colors.cinza
     }
-
-    const mobileScreen = window.screen.width <= 768;
     
     return (
         <section id="sobreMim" style={appStyle}>
