@@ -1,4 +1,3 @@
-import imageDesigner from "../images/EuPort1.svg";
 import logoLinkedin from "../images/logo-linkedin.png";
 import arrowDown from "../icons/arrow-down.svg";
 import videoBG from "../videos/bg-desk.mp4";
@@ -38,7 +37,7 @@ export default function Hero() {
                 
                 {mobileScreen &&
                     <div className="hero-image">
-                        <img src={imageDesigner} alt="Cacá Tavares, designer, pronta para um projeto"/>
+                        <img src="/images/EuPort1.svg" alt="Cacá Tavares, designer, pronta para um projeto"/>
                     </div>
                 }
 
@@ -54,7 +53,7 @@ export default function Hero() {
 
             {!mobileScreen &&
                 <div className="hero-image">
-                    <img src={imageDesigner} alt="Cacá Tavares, designer, pronta para um projeto"/>
+                    <img src="/images/EuPort1.svg" alt="Cacá Tavares, designer, pronta para um projeto"/>
                 </div>     
             }
 
