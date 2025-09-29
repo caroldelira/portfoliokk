@@ -48,12 +48,12 @@ header {
 .hero-image {
     display: flex;
     align-items: center;
-    background-color: transparent;
+    background-color: transparent !important;
     z-index: 1;
 
     img {
         width: 100%;
-        background-color: transparent;
+        background-color: transparent !important;
     }
 }
 
