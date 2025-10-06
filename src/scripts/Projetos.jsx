@@ -50,7 +50,7 @@ export default function Projetos() {
                         categoria={card.categoria}
                         titulo={card.titulo}
                         caminho={card.caminho}
-                        link={`./ProjetoDetalhe/${card.projeto}`}
+                        link={`/ProjetoDetalhe/${card.projeto}`}
                         key={card.id} 
                     />
                 ))}

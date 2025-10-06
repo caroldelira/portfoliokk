@@ -1,5 +1,6 @@
 import { useTheme } from "../scripts/ThemeContext";
 
+import { Link } from "react-router-dom";
 import "../styles/cards.css";
 
 export default function Cards({titulo, caminho, link, categoria}) {
@@ -18,10 +19,10 @@ export default function Cards({titulo, caminho, link, categoria}) {
                 <h3>{titulo}</h3>
             </header>
             <div className="conteudoCard">
-                <a href={link} rel="noreferrer">
+                <Link to={link}>
                     <img src={caminho} alt={titulo} />
                     Ver mais
-                </a>
+                </Link>
             </div>
         </div>
     )

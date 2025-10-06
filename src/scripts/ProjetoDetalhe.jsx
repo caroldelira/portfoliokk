@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import logo from "../images/logo.svg";
 
@@ -55,7 +55,7 @@ export default function ProjetoDetalhe() {
             <header>
                 <div className="header">
                     <img src={logo} alt="Imagem verde com a letra manuscrita CT que é a logo do designer" />
-                    <a href="/">Ver outros projetos</a>
+                    <Link to="/">Ver outros projetos</Link>
                 </div>
             </header>
             <h1 id="tituloProjeto">{projetoSelecionado.descricao}</h1>
