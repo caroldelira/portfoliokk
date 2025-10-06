@@ -73,7 +73,7 @@ export default function ProjetoDetalhe() {
                 nodeRef={nodeRef}
             >
                 <div className="modalImg" ref={nodeRef} >                
-                    <img src={imgAmpliada} onClick={() => fecharModal()}/>               
+                    <img src={imgAmpliada} alt="Imagem do projeto ampliada" onClick={() => fecharModal()}/>               
                 </div>
             </CSSTransition>
             
