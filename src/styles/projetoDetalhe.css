@@ -1,0 +1,167 @@
+#detalheProjeto {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 20px 0;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1.2rem;
+}
+
+.header a:hover {
+    color: var(--color-verdePrincipal);
+    transition: color;
+    cursor: pointer;
+}
+
+.paginaNaoEcontrada {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--color-texto);
+}
+
+.paginaNaoEcontrada a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-verdePrincipal);
+}
+
+.paginaNaoEcontrada a:hover {
+    color: var(--color-verdeEscuro);
+}
+
+#tituloProjeto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 60px 20px;
+    font-size: 30px;
+    color: var(--color-texto);
+}
+
+.gridImg {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gridImg img {
+    max-width: 450px;
+    height: 100%;
+}
+
+.gridImg img:hover {
+    cursor: zoom-in;
+}
+
+.modalImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #000000F0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100; 
+}
+
+.modalImg img {
+    height: 80%;
+}
+
+.modalImg img:hover {
+    cursor: zoom-out;
+}
+
+/* ... SEUS ESTILOS EXISTENTES (modalImg, etc.) ... */
+
+/* 1. Estado Inicial (Antes de Entrar / Depois de Sair) */
+.modal-enter {
+    opacity: 0;
+}
+.modal-exit-active { /* Opcional: Define o estado final antes de sair */
+    opacity: 0;
+}
+
+/* 2. Estado Ativo de Entrada (Durante a Animação de Entrada) */
+.modal-enter-active {
+    opacity: 1;
+    /* Define a transição para todas as propriedades que queremos animar */
+    transition: opacity 300ms ease-in-out; 
+}
+
+/* 3. Estado Ativo de Saída (Durante a Animação de Saída) */
+.modal-exit {
+    opacity: 1;
+}
+.modal-exit-active {
+    opacity: 0;
+    /* Define a transição para a saída */
+    transition: opacity 300ms ease-in-out;
+}
+
+
+/* Animação extra na imagem (zoom/slide) - Opcional, mas melhora o efeito */
+
+/* Estado inicial da imagem (fora de posição ou pequena) */
+.modal-enter .modalImg img {
+    transform: scale(0.8);
+    transition: transform 300ms;
+}
+
+/* Imagem durante a animação */
+.modal-enter-active .modalImg img {
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+/* Imagem ao sair */
+.modal-exit-active .modalImg img {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 768px) { 
+    .header a {
+        font-size: 1rem;
+        margin: 20px;
+    }
+
+    #tituloProjeto {
+        margin: 40px 20x;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .gridImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .gridImg img {
+        max-width: 340px;
+        height: 100%;
+    }
+
+    .modalImg img {
+        height: 30%;
+    }
+}

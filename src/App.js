@@ -18,11 +18,11 @@ export default function App() {
   return (
     <div className="principal" style={appStyle}>
       <Header />
-      <main>
-        <Hero />
-        <SobreMim />
-        <Projetos />
-      </main>
+        <main>
+          <Hero />
+          <SobreMim />
+          <Projetos />
+        </main>
       <Footer />
     </div>
   );

@@ -6,7 +6,7 @@ import email from "../icons/email.svg";
 
 import "../styles/footer.css";
 
-export default function Footer() {
+export default function Footer({menu = true}) {
     const { theme } = useTheme();
  
     const appStyle = {
@@ -16,14 +16,16 @@ export default function Footer() {
 
     return (
         <footer id="contatos" className="footer" style={appStyle}>
-            <nav className="menuFooter">
-                <ul style={{color: theme.colors.texto}}>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#sobreMim">Sobre mim</a></li>
-                    <li><a href="#projetos">Trabalhos</a></li>
-                    <li><a href="#contatos">Contato</a></li>
-                </ul>
-            </nav>
+            {menu &&
+                <nav className="menuFooter">
+                    <ul style={{color: theme.colors.texto}}>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#sobreMim">Sobre mim</a></li>
+                        <li><a href="#projetos">Trabalhos</a></li>
+                        <li><a href="#contatos">Contato</a></li>
+                    </ul>
+                </nav>
+            }
             <div className="contatos">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/ctavaresdsgn" target="_blank" rel="noreferrer"><img src={linkedin} alt="acesso ao linkedin do designer Cacá Tavares" /></a></li>

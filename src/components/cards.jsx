@@ -18,9 +18,9 @@ export default function Cards({titulo, caminho, link, categoria}) {
                 <h3>{titulo}</h3>
             </header>
             <div className="conteudoCard">
-                <a href={link} target="_blank" rel="noreferrer">
+                <a href={link} rel="noreferrer">
                     <img src={caminho} alt={titulo} />
-                    {/* Ver mais */}
+                    Ver mais
                 </a>
             </div>
         </div>

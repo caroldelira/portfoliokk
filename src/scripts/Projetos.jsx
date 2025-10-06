@@ -38,7 +38,7 @@ export default function Projetos() {
                 <nav className="filter">
                     <Button nome="Todos" onClick={() => filtarCategoria("todos")} btnClasses={cardAtivo === "todos" ? "active" : ""} />
                     <Button nome="Marcas" onClick={() => filtarCategoria("marcas")} btnClasses={cardAtivo === "marcas" ? "active" : ""} />
-                    <Button nome="Mídia Kit" onClick={() => filtarCategoria("projetos")} btnClasses={cardAtivo === "projetos" ? "active" : ""} />
+                    <Button nome="Projetos" onClick={() => filtarCategoria("projetos")} btnClasses={cardAtivo === "projetos" ? "active" : ""} />
                     <Button nome="Redes Sociais" onClick={() => filtarCategoria("redesSociais")} btnClasses={cardAtivo === "redesSociais" ? "active" : ""} />
                     <Button nome="Homenagens" onClick={() => filtarCategoria("homenagens")} btnClasses={cardAtivo === "homenagens" ? "active" : ""} />
                 </nav>
@@ -50,8 +50,8 @@ export default function Projetos() {
                         categoria={card.categoria}
                         titulo={card.titulo}
                         caminho={card.caminho}
-                        link={card.link}
-                        key={card.id}
+                        link={`./ProjetoDetalhe/${card.projeto}`}
+                        key={card.id} 
                     />
                 ))}
             </div>

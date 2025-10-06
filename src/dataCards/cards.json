@@ -5,77 +5,88 @@
             "caminho": "/images/cards/image1.png",
             "link": "#",
             "categoria": "projetos",
-            "id": "1"
+            "id": "1",
+            "projeto": "200Anos"
         },
         {
             "titulo": "Posts criados para o Instagram da Rádio Clube FM.",
             "caminho": "/images/cards/image2.png",
             "link": "#",
             "categoria": "redesSociais",
-            "id": "2"
+            "id": "2",
+            "projeto": "RadioClube"
         },
         {
             "titulo": "Posts criados para o feed do Instagram do Esportes DP durante a Copa América.",
             "caminho": "/images/cards/image3.png",
             "link": "#",
             "categoria": "redesSociais",
-            "id": "3"
+            "id": "3",
+            "projeto": "CopaAmerica"
         },
         {
             "titulo": "Idéia, nome e visual criados para o departamento de esportes do diario de pernambuco.",
             "caminho": "/images/cards/image4.png",
             "link": "#",
             "categoria": "projetos",
-            "id": "4"
+            "id": "4",
+            "projeto": "DiarioOlimpico"
         },
         {
             "titulo": "Homenagens",
             "caminho": "/images/cards/image5.png",
             "link": "#",
             "categoria": "homenagens",
-            "id": "5"
+            "id": "5",
+            "projeto": "Homenagem"
         },
         {
             "titulo": "Posts criados para o Instagram da Drift Lifestyle.",
             "caminho": "/images/cards/image6.png",
             "link": "#",
             "categoria": "redesSociais",
-            "id": "6"
+            "id": "6",
+            "projeto": "Drift"
         },
         {
             "titulo": "Marca e layout de projeto criados para o Diariocast.",
             "caminho": "/images/cards/image7.png",
             "link": "#",
             "categoria": "projetos",
-            "id": "7"
+            "id": "7",
+            "projeto": "DiarioCast"
         },
         {
             "titulo": "Anúncios criados para a Rádio Clube de Pernambuco.",
             "caminho": "/images/cards/image8.png",
             "link": "#",
             "categoria": "redesSociais",
-            "id": "8"
+            "id": "8",
+            "projeto": "RadioEDiario"
         },
         {
             "titulo": "Renato Andrade - Bartender.",
             "caminho": "/images/cards/image9.png",
             "link": "#",
             "categoria": "marcas",
-            "id": "9"
+            "id": "9",
+            "projeto": "Renato"
         },
         {
             "titulo": "Marca criada para TEM PROMO AÍ. um app de promoções de supermercados.",
             "caminho": "/images/cards/image10.png",
             "link": "#",
             "categoria": "marcas",
-            "id": "10"
+            "id": "10",
+            "projeto": "TemPromo"
         },
         {
             "titulo": "Capas para projetos comerciais e mídia kit feitas para o Diario de Pernambuco.",
             "caminho": "/images/cards/image11.png",
             "link": "#",
-            "categoria": "midiaKit",
-            "id": "11"
+            "categoria": "projetos",
+            "id": "11",
+            "projeto": "CapasProjetos"
         }
     ]
 }
